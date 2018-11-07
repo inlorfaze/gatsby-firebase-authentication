@@ -23,6 +23,6 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "devDependencies": {
-    "prettier": "^1.14.3"
+    "prettier": "1.14.3"
   }
 }
