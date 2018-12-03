@@ -8,7 +8,7 @@ const LandingPage = () => (
     <div className="background-gradient">
     <Navigation />
     <div className="landing">
-      <h1>Turn Passion into Profit.</h1>
+      <h1>Turn passion into profit.</h1>
       <h2>Polytalent is a freelance marketplace for <Typed 
                 strings={[
                     'creators',
@@ -22,14 +22,23 @@ const LandingPage = () => (
                     loop >
                     <b></b>
                 </Typed></h2>
+      <form name="subscribe">
+      <p>
+        <input className="input-email" type="email" name="email" placeholder="Enter your email address" />
+        <button className="input-submit" type="submit">Join</button>
 
-      <input className="input-email" type="email" placeholder="Enter your email address" />
-
-      <p>Polytalent is currently under construction, but don’t worry… we will be launching soon! If you’d like be get updates about our launch date, please join our mailing list.</p>              
+      </p>
+      </form>
+        
+      <div className="meta">
+      <p>Polytalent is currently under construction, but don’t worry… we will be launching soon!</p>
+      <p> If you’d like be get updates about our launch date, please join our mailing list.</p>              
+      </div>
       <br></br>  
     </div>
     </div>
     <div className="landing-2 grid-container">
+                
       <div className="grid-50">
       <h2>
         Students

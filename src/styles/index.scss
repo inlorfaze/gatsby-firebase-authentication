@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: proxima-nova, sans-serif;
+    letter-spacing: 0.4px;
 }
 
 .nav {
@@ -46,12 +47,19 @@ body {
     h2 {
         font-size: 2em;
         font-weight:400;
+        margin-bottom:3em;
+    }
+    p {
+      margin:0;
+    }
+    .meta {
+      margin-top:2em;
+      margin-bottom:3em;
     }
 }
 
 @media (min-width:850px) {
   .landing {
-    width:800px;
     margin:auto;
   }
 }
@@ -64,9 +72,21 @@ body {
 
 
 .input-email {
-  padding:1em;
+  padding:1.5em;
   border-radius:8px;
-  width:70%;
+  width:50%;
+  font-family:inherit;
+
+}
+
+.input-submit {
+  padding:1.5em 4em;
+  font-family:inherit;
+  border:0;
+  background-color:#333;
+  border-radius: 8px;
+  color:white;
+  margin-left:0.5em;
 }
 
 .landing-2 {
@@ -77,8 +97,9 @@ body {
 
 .grid-50 {
   p {
-    line-height:35px;
+    line-height:25px;
     font-size:20px;
+    width:75%;
   }
   span {
     color:#4BC3EF;
