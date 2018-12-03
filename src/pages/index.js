@@ -22,10 +22,11 @@ const LandingPage = () => (
                     loop >
                     <b></b>
                 </Typed></h2>
-      <form name="subscribe">
+      <form name="subscribe" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
       <p>
         <input className="input-email" type="email" name="email" placeholder="Enter your email address" />
         <button className="input-submit" type="submit">Join</button>
+        <input type="hidden" name="form-name" value="subscribe" />
 
       </p>
       </form>
