@@ -1,0 +1,87 @@
+@import url("https://use.typekit.net/ovo1tad.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/unsemantic/1.2.3/unsemantic-grid-responsive.min.css");
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: proxima-nova, sans-serif;
+}
+
+.nav {
+    padding:2em;
+    display:flex;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        color:white;
+
+    }
+    li {
+        padding:0 1em;
+        display:inline-block;
+    }
+    .logo {
+        font-weight:700;
+        font-size:1.75em;   
+        margin:auto 0;
+    }
+    .nav-links {
+        float:right;
+    }
+}
+
+.landing {
+    text-align: center;
+    color:white;
+    h1 {
+        font-size: 4em;
+        margin-bottom:0;
+    }
+    h2 {
+        font-size: 2em;
+        font-weight:400;
+    }
+}
+
+@media (min-width:850px) {
+  .landing {
+    width:800px;
+    margin:auto;
+  }
+}
+
+.background-gradient {
+    background: rgb(64,130,255);
+    background: linear-gradient(90deg, rgba(64,130,255,1) 0%, rgba(75,195,239,1) 100%);
+
+}
+
+
+.input-email {
+  padding:1em;
+  border-radius:8px;
+  width:70%;
+}
+
+.landing-2 {
+  background-color:white;
+  color:#333;
+  padding:2em 0;
+}
+
+.grid-50 {
+  p {
+    line-height:35px;
+    font-size:20px;
+  }
+  span {
+    color:#4BC3EF;
+    display:block;
+  }
+}

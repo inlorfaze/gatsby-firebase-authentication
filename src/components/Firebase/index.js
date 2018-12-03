@@ -1,19 +1,19 @@
 const prodConfig = {
-  apiKey: YOUR_API_KEY,
-  authDomain: YOUR_AUTH_DOMAIN,
-  databaseURL: YOUR_DATABASE_URL,
-  projectId: YOUR_PROJECT_ID,
-  storageBucket: '',
-  messagingSenderId: YOUR_MESSAGING_SENDER_ID,
+  apiKey: "AIzaSyAP6jMjEEsSnDn_0Xt9cgyWHmAfr6l7hQY",
+  authDomain: "poly-talent.firebaseapp.com",
+  databaseURL: "https://poly-talent.firebaseio.com",
+  projectId: "poly-talent",
+  storageBucket: "poly-talent.appspot.com",
+  messagingSenderId: "539622651937"
 };
 
 const devConfig = {
-  apiKey: YOUR_API_KEY,
-  authDomain: YOUR_AUTH_DOMAIN,
-  databaseURL: YOUR_DATABASE_URL,
-  projectId: YOUR_PROJECT_ID,
-  storageBucket: '',
-  messagingSenderId: YOUR_MESSAGING_SENDER_ID,
+  apiKey: "AIzaSyAP6jMjEEsSnDn_0Xt9cgyWHmAfr6l7hQY",
+  authDomain: "poly-talent.firebaseapp.com",
+  databaseURL: "https://poly-talent.firebaseio.com",
+  projectId: "poly-talent",
+  storageBucket: "poly-talent.appspot.com",
+  messagingSenderId: "539622651937"
 };
 
 const config =

@@ -4,6 +4,7 @@ import Navigation from './Navigation';
 import getFirebase from './Firebase';
 import FirebaseContext from './Firebase/FirebaseContext';
 import withAuthentication from './Session/withAuthentication';
+import "../styles/index.scss";
 
 class Layout extends Component {
   state = {
@@ -21,6 +22,7 @@ class Layout extends Component {
       this.setState({ firebase });
     });
   }
+  
 
   render() {
     return (
@@ -33,8 +35,6 @@ class Layout extends Component {
 
 const AppWithAuthentication = withAuthentication(props => (
   <Fragment>
-    <Navigation />
-    <hr />
     {props.children}
   </Fragment>
 ));

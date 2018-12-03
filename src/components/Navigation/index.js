@@ -1,10 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'gatsby';
 
 import * as routes from '../../constants/routes';
 import AuthUserContext from '../Session/AuthUserContext';
 import SignOutButton from '../SignOut';
-
 const Navigation = () => (
   <AuthUserContext.Consumer>
     {authUser =>
@@ -14,31 +13,31 @@ const Navigation = () => (
 );
 
 const NavigationAuth = () => (
-  <ul>
-    <li>
-      <Link to={routes.LANDING}>Landing</Link>
-    </li>
-    <li>
-      <Link to={routes.HOME}>Home</Link>
-    </li>
-    <li>
-      <Link to={routes.ACCOUNT}>Account</Link>
-    </li>
-    <li>
-      <SignOutButton />
-    </li>
-  </ul>
+ <div className="nav">
+        <Link className="logo" to={routes.LANDING}>polytalent</Link>
+
+        <Link to={routes.HOME}>Home</Link>
+
+        <Link to={routes.ACCOUNT}>Account</Link>
+
+        <SignOutButton />
+  </div>
 );
 
 const NavigationNonAuth = () => (
-  <ul>
+  <div className="nav">
+  <Link className="logo" to={routes.LANDING}>polytalent</Link>
+
+  <ul className="nav-list">
+
     <li>
-      <Link to={routes.LANDING}>Landing</Link>
+      <Link to={routes.ABOUT}>Learn More</Link>
     </li>
     <li>
-      <Link to={routes.SIGN_IN}>Sign In</Link>
+      <Link to={routes.SIGN_IN}>Join</Link>
     </li>
   </ul>
+  </div>
 );
 
 export default Navigation;
