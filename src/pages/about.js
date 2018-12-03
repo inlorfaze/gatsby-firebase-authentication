@@ -9,8 +9,8 @@ const About = () => (
 
 
 
-export default () => {
+export default () => (
   <Layout>
     <About />
   </Layout>
-}
+);
